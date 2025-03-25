@@ -1,0 +1,109 @@
+API REQUEST: /signin by testuser
+ERROR during /signin: Bad credentials
+API REQUEST: /signin by testuser
+DB TRANSACTION: Authenticated user testuser
+API REQUEST: /signin by testuser
+DB TRANSACTION: Authenticated user testuser
+API REQUEST: /signin by testuser
+ERROR during /signin: Bad credentials
+API REQUEST: /signin by testuser
+DB TRANSACTION: Authenticated user testuser
+API REQUEST: /signup by Tittu
+ERROR during /signup: Error: Role is not found.
+API REQUEST: /signup by Tittu
+ERROR during /signup: Error: Role is not found.
+API REQUEST: /signup by Tittu
+ERROR during /signup: Error: Role is not found.
+API REQUEST: /signup by Tittu
+DB TRANSACTION: New user registered: Tittu
+INFO: API Request received at /api/test/simulate
+INFO: DB Transaction - User fetched from DB
+ERROR: Division by zero - / by zero
+
+📥 Sending request to external API: https://jsonplaceholder.typicode.com/users
+✅ Received external user: Bret
+💾 Saved user to MongoDB: 67d29608a3b24832621abc5f
+✅ Received external user: Antonette
+💾 Saved user to MongoDB: 67d29608a3b24832621abc60
+✅ Received external user: Samantha
+💾 Saved user to MongoDB: 67d29608a3b24832621abc61
+✅ Received external user: Karianne
+💾 Saved user to MongoDB: 67d29608a3b24832621abc62
+✅ Received external user: Kamren
+💾 Saved user to MongoDB: 67d29608a3b24832621abc63
+✅ Received external user: Leopoldo_Corkery
+💾 Saved user to MongoDB: 67d29608a3b24832621abc64
+✅ Received external user: Elwyn.Skiles
+💾 Saved user to MongoDB: 67d29608a3b24832621abc65
+✅ Received external user: Maxime_Nienow
+💾 Saved user to MongoDB: 67d29609a3b24832621abc66
+✅ Received external user: Delphine
+💾 Saved user to MongoDB: 67d29609a3b24832621abc67
+✅ Received external user: Moriah.Stanton
+💾 Saved user to MongoDB: 67d29609a3b24832621abc68
+📥 Sending request to external API: https://jsonplaceholder.typicode.com/users
+✅ Received external user: Bret
+💾 Saved user to MongoDB: 67d29731a3b24832621abc72
+✅ Received external user: Antonette
+💾 Saved user to MongoDB: 67d29731a3b24832621abc73
+✅ Received external user: Samantha
+💾 Saved user to MongoDB: 67d29731a3b24832621abc74
+✅ Received external user: Karianne
+💾 Saved user to MongoDB: 67d29731a3b24832621abc75
+✅ Received external user: Kamren
+💾 Saved user to MongoDB: 67d29731a3b24832621abc76
+✅ Received external user: Leopoldo_Corkery
+💾 Saved user to MongoDB: 67d29731a3b24832621abc77
+✅ Received external user: Elwyn.Skiles
+💾 Saved user to MongoDB: 67d29732a3b24832621abc78
+✅ Received external user: Maxime_Nienow
+💾 Saved user to MongoDB: 67d29732a3b24832621abc79
+✅ Received external user: Delphine
+💾 Saved user to MongoDB: 67d29732a3b24832621abc7a
+✅ Received external user: Moriah.Stanton
+💾 Saved user to MongoDB: 67d29732a3b24832621abc7b
+📥 Sending request to external API: "https://jsonplaceholder.typicode.com/users"
+❌ Error while fetching/saving users: Illegal character in scheme name at index 0: %22https://jsonplaceholder.typicode.com/users%22
+🌐 Fetching JSON from URL: https://jsonplaceholder.typicode.com/users
+📄 User: Bret
+✅ Saved user to MongoDB: 67d29cb3a3b24832621abc8a
+📄 User: Antonette
+✅ Saved user to MongoDB: 67d29cb3a3b24832621abc8b
+📄 User: Samantha
+✅ Saved user to MongoDB: 67d29cb3a3b24832621abc8c
+📄 User: Karianne
+✅ Saved user to MongoDB: 67d29cb3a3b24832621abc8d
+📄 User: Kamren
+✅ Saved user to MongoDB: 67d29cb3a3b24832621abc8e
+📄 User: Leopoldo_Corkery
+✅ Saved user to MongoDB: 67d29cb4a3b24832621abc8f
+📄 User: Elwyn.Skiles
+✅ Saved user to MongoDB: 67d29cb4a3b24832621abc90
+📄 User: Maxime_Nienow
+✅ Saved user to MongoDB: 67d29cb4a3b24832621abc91
+📄 User: Delphine
+✅ Saved user to MongoDB: 67d29cb4a3b24832621abc92
+📄 User: Moriah.Stanton
+✅ Saved user to MongoDB: 67d29cb4a3b24832621abc93
+🎯 Finished importing 10 users from custom URL.
+INFO: API Request received at /api/test/simulate
+INFO: DB Transaction - User fetched from DB
+ERROR: Division by zero - / by zero
+
+API REQUEST: /signin by testuser
+ERROR during /signin: Bad credentials
+API REQUEST: /signin by testuser
+DB TRANSACTION: Authenticated user testuser
+📡 Fetching raw JSON from: https://jsonplaceholder.typicode.com/users
+📄 Raw JSON fetched: ArrayList
+✅ Saved 10 documents to MongoDB collection: external_raw_data
+INFO: API Request received at /api/test/simulate
+INFO: DB Transaction - User fetched from DB
+ERROR: Division by zero - / by zero
+
+Fetching raw JSON from: https://jsonplaceholder.typicode.com/users
+Raw JSON fetched: ArrayList
+Saved 10 documents to MongoDB collection: external_raw_data
+Fetching raw JSON from: https://jsonplaceholder.typicode.com/users
+Raw JSON fetched: ArrayList
+Saved 10 documents to MongoDB collection: external_raw_data

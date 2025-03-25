@@ -17,10 +17,10 @@ This project provides RESTful APIs for managing users in a Spring Boot applicati
 ### Authentication APIs
 
 #### 1. User Sign Up
-POST /api/auth/signup
-Description: Registers a new user with username, email, password, and roles.
-Security: No authentication required.
-Request Body:
+- **POST** `/api/auth/signup`
+- **Description**: Registers a new user with username, email, password, and roles.
+- **Security**: No authentication required.
+- **Request Body**:
 ```json
 {
   "username": "string",
@@ -32,14 +32,12 @@ Response:
 {
   "message": "User registered successfully!"
 }
-```
 
 #### 2. User Sign In
 POST /api/auth/signin
 Description: Authenticates user with username and password. Returns JWT token on success.
 Security: No authentication required.
 Request Body:
-```json
 {
   "username": "string",
   "password": "string"
@@ -53,7 +51,6 @@ Response:
   "email": "string",
   "roles": ["ROLE_USER"]
 }
-```
 
 
 ### User Management APIs (JWT Token Required)
@@ -69,37 +66,31 @@ Authorization: Bearer <JWT_TOKEN>
 PUT /api/auth/{id}
 Description: Update an existing user's username and email.
 Request Body:
-```json
 {
   "username": "newUsername",
   "email": "newEmail@example.com"
 }
 
 Response: Updated user object
-```
 
 #### 4. Delete User
 DELETE /api/auth/{id}
 Description: Delete a user by ID.
-```json
 Response:
 "User deleted successfully"
-```
 
 #### 5. Fetches user data
 GET /fetch-user-data
 Description: Fetches user data from a predefined external API and saves it in the database.
 External Source: `https://jsonplaceholder.typicode.com/users`
 Response:
-```json
 Users imported successfully from: https://jsonplaceholder.typicode.com/users
-```
+
 
 #### 6. Lists all users
 GET /list-user-data
 Description: Lists all users previously imported from the external API.
 Response:
-```json
 [
   {
     "id": "string",
@@ -109,13 +100,11 @@ Response:
   },
   ...
 ]
-```
 
 #### 7. Accepts a custom JSON URL
 POST /save-json-data
 Description: Accepts a custom JSON URL in the request body and imports unstructured data into the database.
 Request Body:
-```json
 {
   "url": "https://example.com/data.json"
 }
@@ -124,13 +113,12 @@ Users imported successfully from: https://example.com/data.json
 
 Error Response (missing URL):
 Missing 'url' in request body
-```
+
 
 #### 8. Lists all unstructured
 GET /list-json-data
 Description: Lists all unstructured raw JSON data previously imported.
 Response:
-```json
 [
   {
     "id": 1,
@@ -142,7 +130,6 @@ Response:
   },
   ...
 ]
-```
 
 # Log Simulation API (/api/log)
 #### 9. Simulates logs
@@ -150,11 +137,10 @@ GET /simulate
 Description: Simulates logs (request, transaction, error) and uploads them to S3.
 Access: Authenticated users only
 Sample Output (in S3):
-```json
 INFO: API Request received at /api/test/simulate
 INFO: DB Transaction - User fetched from DB
 ERROR: Division by zero - / by zero
-```
+
 
 # 🪵 AWS S3 Logging
 All API requests, DB transactions, and errors are logged and uploaded to an AWS S3 bucket for auditing and debugging purposes.
@@ -207,8 +193,7 @@ springdoc.api-docs.path=/v3/api-docs
 # 📚 Swagger Documentation
 Swagger UI: http://localhost:8080/swagger-ui.html
 
-```
-Project Structure
+Project Structure (Simplified)
 com.wareable.userservice
 │
 ├── controller             → Handles incoming HTTP requests (e.g., AuthController, ExternalUserController)
@@ -232,6 +217,6 @@ com.wareable.userservice
 ├── service                → Service interfaces
 │
 └── service.impl           → Business logic and service implementations
-```
+
 
 
